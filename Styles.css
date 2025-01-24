@@ -1,286 +1,267 @@
+/* General Styles */
 body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-  }
-  
-  header {
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
-      padding: 1rem 0;
-  }
-  
-  nav {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-      flex-wrap: wrap; /* Allow nav links to wrap on smaller screens */
-  }
-  
-  nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      text-align: center;
-  }
-  
-  nav a:hover {
-      background-color: #ddd;
-      color: black;
-  }
-  
-  .hero {
-      background-image: url('/Images/SchoolBackgroud.png');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-  }
-  
-  .hero h1 {
-      font-size: 3rem;
-  }
-  
-  section {
-      padding: 20px;
-      margin: 20px;
-  }
-  
-  .about, .contact {
-      background-color: #f4f4f4;
-      padding: 20px;
-      border-radius: 5px;
-  }
-  
-  .footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-  }
-  
-  #principle {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-      margin: 20px;
-  }
-  
-  #principle-img {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px; /* Add space between text and image on smaller screens */
-  }
-  
-  #contactinfo {
-      text-decoration: none;
-      color: #797979;
-  }
-  
-  .contact {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-  }
-  
-  .contact iframe {
-      width: 100%; /* Make iframe responsive */
-      max-width: 600px; /* Limit maximum width */
-      height: 300px; /* Adjust height for smaller screens */
-      margin-top: 20px; /* Add space above iframe on smaller screens */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-      .hero h1 {
-          font-size: 2rem; /* Reduce font size for smaller screens */
-      }
-  
-      #principle {
-          flex-direction: column; /* Stack content vertically */
-          text-align: center; /* Center-align text */
-      }
-  
-      #principle-img {
-          margin-top: 20px; /* Add space between text and image */
-      }
-  
-      .contact {
-          flex-direction: column; /* Stack contact details and map vertically */
-          align-items: center; /* Center-align content */
-      }
-  
-      .contact iframe {
-          height: 250px; /* Adjust iframe height for smaller screens */
-      }
-  
-      .teachers {
-          flex-direction: column; /* Stack teacher images vertically */
-      }
-  
-      .teachers div {
-          margin-bottom: 20px; /* Add space between teacher images */
-      }
-  }
-  
-  @media (max-width: 480px) {
-      nav a {
-          padding: 10px 15px; /* Reduce padding for smaller screens */
-      }
-  
-      .hero h1 {
-          font-size: 1.5rem; /* Further reduce font size for very small screens */
-      }
-  
-      .hero p {
-          font-size: 0.9rem; /* Reduce paragraph font size */
-      }
-  
-      .contact iframe {
-          height: 200px; /* Further adjust iframe height */
-      }
-  }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
 
-  body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-  }
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
 
-  h2 {
-      text-align: center;
-      color: #333;
-      margin-top: 20px;
-  }
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
 
-  /* Form Container */
-  form {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
-  /* Fieldset Styling */
-  fieldset {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 15px;
-      margin-bottom: 20px;
-  }
+.hero {
+    background-image: url('./Images/SchoolBackgroud.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
 
-  legend {
-      font-weight: bold;
-      font-size: 1.2em;
-      color: #333;
-      padding: 0 10px;
-  }
+.hero h1 {
+    font-size: 3rem;
+}
 
-  /* Label Styling */
-  label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-      color: #555;
-  }
+section {
+    padding: 20px;
+    margin: 20px;
+}
 
-  /* Input Fields */
-  input[type="text"],
-  input[type="date"],
-  input[type="tel"],
-  input[type="email"],
-  select,
-  textarea,
-  input[type="file"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-      box-sizing: border-box;
-  }
+.about, .contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
 
-  input[type="file"] {
-      padding: 5px;
-  }
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 
-  /* Button Styling */
-  button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2em;
-      cursor: pointer;
-      margin-top: 20px;
-  }
+#principle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
 
-  button:hover {
-      background-color: #45a049;
-  }
+#principle-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
-  /* Responsive Design */
-  @media (max-width: 600px) {
-      form {
-          padding: 15px;
-          margin: 10px;
-      }
+#contactinfo {
+    text-decoration: none;
+    color: #797979;
+}
 
-      h2 {
-          font-size: 1.5em;
-      }
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
-      legend {
-          font-size: 1em;
-      }
+.contact iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
 
-      input[type="text"],
-      input[type="date"],
-      input[type="tel"],
-      input[type="email"],
-      select,
-      textarea,
-      input[type="file"] {
-          font-size: 0.9em;
-      }
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-      button {
-          font-size: 1em;
-      }
-  }
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
 
-  @media (max-width: 400px) {
-      h2 {
-          font-size: 1.3em;
-      }
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    padding: 0 10px;
+}
 
-      legend {
-          font-size: 0.9em;
-      }
+/* Label Styling */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
 
-      input[type="text"],
-      input[type="date"],
-      input[type="tel"],
-      input[type="email"],
-      select,
-      textarea,
-      input[type="file"] {
-          font-size: 0.8em;
-      }
+/* Input Fields */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
 
-      button {
-          font-size: 0.9em;
-      }
-  }
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    #principle {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #principle-img {
+        margin-top: 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact iframe {
+        height: 250px;
+    }
+
+    .teachers {
+        flex-direction: column;
+    }
+
+    .teachers div {
+        margin-bottom: 20px;
+    }
+
+    form {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    legend {
+        font-size: 1em;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea,
+    input[type="file"] {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        padding: 10px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .contact iframe {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    legend {
+        font-size: 0.9em;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea,
+    input[type="file"] {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
